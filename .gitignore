@@ -12,22 +12,44 @@ app/.cxx/
 *.iml
 captures/
 .externalNativeBuild/
+*.apk
+*.ap_
+*.dex
+*.class
 
-# Gradle Wrapper
+# Gradle Wrapper (keep jar)
 !gradle/wrapper/gradle-wrapper.jar
 
 # NDK
 obj/
+*.o
+*.so
+*.a
 
-# Keystore
+# Keystore files
 *.jks
 *.keystore
+
+# OpenCV (downloaded by setup script)
+third_party/
+app/libs/*.aar
+app/src/main/jniLibs/
 
 # Node/Web
 node_modules/
 web/node_modules/
 web/dist/
+web/package-lock.json
+
+# IDE
+.vscode/
+.vs/
+*.swp
+*.swo
+*~
 
 # OS
 .DS_Store
 Thumbs.db
+ehthumbs.db
+Desktop.ini

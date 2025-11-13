@@ -1,0 +1,18 @@
+## This file is an example template for local.properties
+## Copy this file to local.properties and adjust paths for your machine
+## local.properties is git-ignored and contains machine-specific paths
+
+## Android SDK location
+## Windows example: C\:\\Users\\YourName\\AppData\\Local\\Android\\Sdk
+## macOS/Linux example: /Users/YourName/Library/Android/sdk
+sdk.dir=
+
+## (Optional) NDK location - usually auto-detected from SDK
+## Only set this if you have a custom NDK installation
+# ndk.dir=
+
+## OpenCV Android SDK location (required for native builds)
+## Set by scripts/setup_opencv_android script
+## Windows example: C\:/path/to/OpenCV-android-sdk
+## macOS/Linux example: /path/to/OpenCV-android-sdk
+opencv.dir=
