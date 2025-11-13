@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FlamApp Processed Frame</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; padding: 0; background: #111; color: #eee; }
+      .wrap { max-width: 960px; margin: 2rem auto; padding: 1rem; }
+      .overlay { position: absolute; top: 1rem; left: 1rem; background: rgba(0,0,0,0.6); padding: .5rem .75rem; border-radius: .25rem; font-size: .9rem; }
+      .stage { position: relative; display: inline-block; }
+      img { max-width: 100%; height: auto; display: block; border: 1px solid #333; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>FlamApp Processed Sample</h1>
+      <p>This is the processed frame saved by the Android app and copied to <code>web/assets/processed_sample.png</code>.</p>
+      <div class="stage">
+        <img id="frame" src="assets/processed_sample.png" alt="processed" />
+        <div id="overlay" class="overlay">FPS: 30 | 1280x720</div>
+      </div>
+      <script type="module" src="./dist/index.js"></script>
+    </div>
+  </body>
+</html>
