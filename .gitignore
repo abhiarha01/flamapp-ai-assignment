@@ -1,0 +1,33 @@
+# Logs
+*.log
+
+# Android build
+.gradle/
+/build/
+/local.properties
+/.idea/
+.cxx/
+app/build/
+app/.cxx/
+*.iml
+captures/
+.externalNativeBuild/
+
+# Gradle Wrapper
+!gradle/wrapper/gradle-wrapper.jar
+
+# NDK
+obj/
+
+# Keystore
+*.jks
+*.keystore
+
+# Node/Web
+node_modules/
+web/node_modules/
+web/dist/
+
+# OS
+.DS_Store
+Thumbs.db
