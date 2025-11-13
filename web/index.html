@@ -10,6 +10,17 @@
       .overlay { position: absolute; top: 1rem; left: 1rem; background: rgba(0,0,0,0.6); padding: .5rem .75rem; border-radius: .25rem; font-size: .9rem; }
       .stage { position: relative; display: inline-block; }
       img { max-width: 100%; height: auto; display: block; border: 1px solid #333; }
+      .processed-image {
+    background: white;         /* makes transparent PNG visible */
+    display: block;            /* ensures it renders correctly */
+    max-width: 100%;           /* responsive */
+    z-index: 1;                /* ensures it appears above background */
+    position: relative;        /* prevents collapsing issues */
+}
+.processed-image {
+    border: 2px solid red !important;
+}
+
     </style>
   </head>
   <body>
@@ -17,7 +28,8 @@
       <h1>FlamApp Processed Sample</h1>
       <p>This is the processed frame saved by the Android app and copied to <code>web/assets/processed_sample.png</code>.</p>
       <div class="stage">
-        <img id="frame" src="assets/processed_sample.png" alt="processed" />
+        <img id="processed-image" src="./assets/processed_sample.png" width="400" alt="Processed frame"/>
+
         <div id="overlay" class="overlay">FPS: 30 | 1280x720</div>
       </div>
       <script type="module" src="./dist/index.js"></script>
