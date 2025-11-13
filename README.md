@@ -1,6 +1,5 @@
 # FlamApp AI Android + OpenCV + OpenGL ES Starter
 
-[![Android CI Build](https://github.com/YOUR_USERNAME/flamapp-ai-android-opencv-opengles/workflows/Android%20CI%20Build/badge.svg)](https://github.com/YOUR_USERNAME/flamapp-ai-android-opencv-opengles/actions)
 
 A complete Android application demonstrating real-time camera processing with OpenCV and OpenGL ES rendering.
 
